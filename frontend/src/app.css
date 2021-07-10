@@ -1,0 +1,87 @@
+/* Global */
+body {
+  margin: 0;
+  font-size: 18px;
+}
+* {
+  box-sizing: border-box;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+/* Kanban board */
+.kanban-board {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 40px 15px;
+  text-align: center;
+}
+input {
+  flex: 0 0 400px;
+  max-width: 400px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #444;
+  margin-right: 10px;
+}
+button {
+  background-color: tomato;
+  border: 1px solid #444;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+.board_row {
+  flex: 0 0 100%;
+}
+.board {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 15px;
+}
+.board_inner {
+  border: 1px solid #444;
+}
+.board_title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  border-bottom: 1px solid #444;
+  padding: 10px;
+  background-color: tomato;
+}
+.board_body {
+  padding: 15px;
+  text-align: left;
+  transition: none;
+  line-height: 40px;
+}
+.add-todo {
+  margin: 70px 0;
+}
+.todo {
+  transform: all 0.5s;
+  padding-bottom: 15px;
+}
+.todo-content {
+  line-height: 18px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: move;
+  transition: all 0.2s;
+}
+.todo-content.is-pressed {
+  opacity: 0.5;
+}
+.droppable {
+  padding-bottom: 70px;
+  background-color: lightgoldenrodyellow;
+  transition: all 0.5s;
+}
+
+.todo.to-be-dropped {
+  opacity: 0.5;
+}
